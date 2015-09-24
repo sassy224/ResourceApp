@@ -74,6 +74,8 @@ namespace ResourceApp
             txtAudio.Text = Resources.Audio1.ToString();
             txtFile.Text = Resources.File1.ToString();
             picBox.Image = Resources.Image1;
+
+            this.Icon = Resources.Icon1;
         }
 
         private void Form1_Load(object sender, EventArgs e)

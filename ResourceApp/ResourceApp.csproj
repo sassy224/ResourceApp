@@ -99,15 +99,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\Resources\imgHappy.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Resources\a.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Resources\icoSmiley.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\912.png" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +115,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Windows Balloon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\137392976177.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double-J-Design-Super-Mono-3d-Key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Battery Critical.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1e36bcb8ce179bd8cc8db28ff4ef6fb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File2.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
