@@ -33,6 +33,16 @@
             this.lstResources = new System.Windows.Forms.ListView();
             this.Key = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Value = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.picBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtString = new System.Windows.Forms.TextBox();
+            this.txtIcon = new System.Windows.Forms.TextBox();
+            this.txtFile = new System.Windows.Forms.TextBox();
+            this.txtAudio = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
             // btnChange
@@ -60,15 +70,77 @@
             // 
             resources.ApplyResources(this.Value, "Value");
             // 
+            // picBox
+            // 
+            this.picBox.Image = global::ResourceApp.Properties.Resources.Image1;
+            resources.ApplyResources(this.picBox, "picBox");
+            this.picBox.Name = "picBox";
+            this.picBox.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // txtString
+            // 
+            resources.ApplyResources(this.txtString, "txtString");
+            this.txtString.Name = "txtString";
+            this.txtString.ReadOnly = true;
+            // 
+            // txtIcon
+            // 
+            resources.ApplyResources(this.txtIcon, "txtIcon");
+            this.txtIcon.Name = "txtIcon";
+            this.txtIcon.ReadOnly = true;
+            // 
+            // txtFile
+            // 
+            resources.ApplyResources(this.txtFile, "txtFile");
+            this.txtFile.Name = "txtFile";
+            this.txtFile.ReadOnly = true;
+            // 
+            // txtAudio
+            // 
+            resources.ApplyResources(this.txtAudio, "txtAudio");
+            this.txtAudio.Name = "txtAudio";
+            this.txtAudio.ReadOnly = true;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtFile);
+            this.Controls.Add(this.txtAudio);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtIcon);
+            this.Controls.Add(this.txtString);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.picBox);
             this.Controls.Add(this.lstResources);
             this.Controls.Add(this.btnChange);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -78,5 +150,14 @@
         private System.Windows.Forms.ListView lstResources;
         private System.Windows.Forms.ColumnHeader Key;
         private System.Windows.Forms.ColumnHeader Value;
+        private System.Windows.Forms.PictureBox picBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtString;
+        private System.Windows.Forms.TextBox txtIcon;
+        private System.Windows.Forms.TextBox txtFile;
+        private System.Windows.Forms.TextBox txtAudio;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

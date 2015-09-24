@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ResourceApp.Properties;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,8 +51,8 @@ namespace ResourceApp
                 Thread.CurrentThread.CurrentCulture = cIFrCA;
             }
 
-            this.Controls.Clear();
-            this.InitializeComponent();
+            //this.Controls.Clear();
+            //this.InitializeComponent();
             BindResources();
         }
 
@@ -59,13 +60,20 @@ namespace ResourceApp
         {
             lstResources.Items.Clear();
             //ResourceManager rm = new ResourceManager("Resources", Assembly.GetExecutingAssembly());
-            ResourceSet resourceSet = ResourceApp.Properties.Resources.ResourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
+            ResourceSet resourceSet = Resources.ResourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
             foreach (DictionaryEntry entry in resourceSet)
             {
                 string resourceKey = (string)entry.Key;
                 //object resource = entry.Value;
                 lstResources.Items.Add(new ListViewItem(new string[] { resourceKey, entry.Value.ToString() }));
             }
+
+            //resourceSet.GetString("String1");
+            txtString.Text = Resources.ResourceManager.GetString("String1");
+            txtIcon.Text = Resources.Icon1.ToString();
+            txtAudio.Text = Resources.Audio1.ToString();
+            txtFile.Text = Resources.File1.ToString();
+            picBox.Image = Resources.Image1;
         }
 
         private void Form1_Load(object sender, EventArgs e)

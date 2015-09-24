@@ -57,12 +57,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.fr-CA.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.fr-CA.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.fr-FR.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +106,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Resources\icoSmiley.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\912.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button round eject.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Background.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double-J-Design-Super-Mono-3d-Button-round-dark-warning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Balloon.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
